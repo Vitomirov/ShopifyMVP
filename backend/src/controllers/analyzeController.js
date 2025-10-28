@@ -1,11 +1,10 @@
 const axios = require("axios");
 const { scrapeShopify } = require("../services/shopifyScraper");
 const { getAIRecommendations } = require("../services/openaiService");
-const { formatAIResponse } = require("../utils/formatResponse");
 
 /**
  * Detects if the given URL belongs to a Shopify store.
- * It checks:
+ * Checks:
  *  - if the domain contains .myshopify.com
  *  - if /cart.js endpoint works
  *  - if HTML source includes Shopify-specific fingerprints
@@ -28,16 +27,15 @@ const isShopifyStore = async (url) => {
       return true;
     }
   } catch {
-    console.log(`[Shopify Check] /cart.js endpoint failed ❌`);
+    console.log(`[Shopify Check] /cart.js endpoint failed`);
   }
 
   try {
-    // ---  HTML FINGERPRINT CHECK ---
+    // --- HTML FINGERPRINT CHECK ---
     const { data: html } = await axios.get(cleanUrl, { timeout: 5000 });
 
-    // Shopify fingerprints to look for
     const fingerprints = [
-      "cdn.shopify.com", 
+      "cdn.shopify.com",
       "window.Shopify",
       "Shopify.theme",
       "shopify-checkout",
@@ -55,10 +53,9 @@ const isShopifyStore = async (url) => {
 
     console.log(`[Shopify Check] No Shopify fingerprints found`);
   } catch (err) {
-    console.log(`[Shopify Check] HTML fetch failed`, err.message);
+    console.log(`[Shopify Check] HTML fetch failed:`, err.message);
   }
 
-  // --- FALLBACK ---
   console.log(`[Shopify Check] Not a Shopify store`);
   return false;
 };
@@ -73,7 +70,6 @@ const analyzeController = async (req, res) => {
 
     console.log(`\n🔍 Checking if ${url} is a Shopify store...`);
 
-    // Validate Shopify store
     const validShopify = await isShopifyStore(url);
     if (!validShopify) {
       return res
@@ -83,18 +79,17 @@ const analyzeController = async (req, res) => {
 
     console.log(` Shopify store confirmed: ${url}`);
 
-    // Scrape Shopify data
+    // Scrape Shopify store data
     const shopData = await scrapeShopify(url);
 
-    // Get AI recommendations
-    const aiRawResponse = await getAIRecommendations(shopData);
+    // Get AI recommendations (already JSON)
+    const aiResponse = await getAIRecommendations(shopData);
 
-    // Format AI response into structured JSON
-    const formattedResponse = formatAIResponse(aiRawResponse);
+    // Send JSON directly
+    res.json(aiResponse);
 
-    res.json(formattedResponse);
   } catch (error) {
-    console.error(" analyzeController error:", error.message);
+    console.error("analyzeController error:", error.message);
     res.status(500).json({ error: "Server error" });
   }
 };
