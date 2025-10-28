@@ -1,0 +1,38 @@
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.url-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.url-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.url-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recommendation-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+}
