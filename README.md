@@ -1,22 +1,20 @@
-# ShopifyMVP Local Setup
+# ShopifyMVP - Local Docker Setup
 
-# 1. Clone the repository
-git clone git@github.com:Vitomirov/ShopifyMVP.git
+## 1. Clone the repository
+git clone https://github.com/Vitomirov/ShopifyMVP.git
 cd ShopifyMVP
 
-# 2. Backend Setup
+## 2. Create backend .env file
 cd backend
-npm install
-
-# 3. Create .env file
 echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
-echo "PORT=5000" >> .env
+echo "PORT=3000" >> .env
+cd ..
 
-# 4. Start backend server
-node src/index.js
-# Expected output: Server is on port 5000
+## 3. Start the project with Docker
+docker compose up --build
 
-# 5. Frontend Setup (open a new terminal tab/window)
-cd frontend
-npm install
-npm run dev
+# The backend will run on http://localhost:3000
+# The frontend will run on http://localhost:5173
+
+# Nodemon is enabled in the backend container for live reload.
+# Any code changes in your local files will automatically trigger rebuilds.
