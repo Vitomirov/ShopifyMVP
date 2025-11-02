@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./backend
+    container_name: shopifymvp-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+      - ./backend/.env:/app/.env
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    command: nodemon src/index.js
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: shopifymvp-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - VITE_BACKEND_URL=http://localhost:3000
+    command: npm run dev
+    restart: unless-stopped

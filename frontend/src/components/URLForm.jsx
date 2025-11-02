@@ -14,7 +14,7 @@ const URLForm = ({ setRecommendations, setLoading }) => {
     setError(null);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/analyze", { url });
+      const response = await axios.post("http://localhost:3000/api/analyze", { url });
       setRecommendations(response.data);
     } catch (err) {
       console.error("Error calling API:", err.message);

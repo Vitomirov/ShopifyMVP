@@ -15,7 +15,7 @@ const isShopifyStore = async (url) => {
 
   // --- DOMAIN CHECK ---
   if (lowerUrl.includes(".myshopify.com")) {
-    console.log(`[Shopify Check] Detected .myshopify.com domain ✅`);
+    console.log(`[Shopify Check] Detected .myshopify.com domain`);
     return true;
   }
 
@@ -23,7 +23,7 @@ const isShopifyStore = async (url) => {
     // --- CART ENDPOINT CHECK ---
     const cartRes = await axios.get(`${cleanUrl}/cart.js`, { timeout: 4000 });
     if (cartRes.headers["content-type"]?.includes("application/json")) {
-      console.log(`[Shopify Check] /cart.js endpoint valid ✅`);
+      console.log(`[Shopify Check] /cart.js endpoint valid`);
       return true;
     }
   } catch {

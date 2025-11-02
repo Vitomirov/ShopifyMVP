@@ -55,7 +55,7 @@ Output only valid JSON. Format exactly like this:
         },
         { role: "user", content: prompt }
       ],
-      temperature: 0.5, // stable and focused output
+      temperature: 0.5,
       max_tokens: 700
     });
 
