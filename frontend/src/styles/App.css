@@ -37,7 +37,9 @@
   text-align: left;
 }
 .jsonData{
-            color: "#0f0", 
-            padding: "16px", 
-
+    color: "#0f0", 
+    backgroundColor: "#222", 
+    padding: "20px", 
+    borderRadius: "8px", 
+    marginTop: "20px",
 }

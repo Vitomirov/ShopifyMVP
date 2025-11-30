@@ -16,7 +16,10 @@ function App() {
       {loading && <p>Loading AI recommendations...</p>}
 
       {result && (
-        <Recommendations data={result.data} raw={result.raw} />
+<Recommendations 
+  data={result.recommendations} 
+  raw={result.scrapedData} 
+/>
       )}
     </div>
   );
