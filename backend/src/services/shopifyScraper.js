@@ -1,35 +1,88 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-/**
- * scrapeShopify
- * Fetches basic data from a Shopify store
- * @param {string} url - Shopify store URL
- * @returns {Object} - title, description, headings
- */
-const scrapeShopify = async (url) => {
-  try {
-    // Fetch HTML from the given URL
-    const { data } = await axios.get(url);
+const DEFAULT_USER_AGENT =
+  "Mozilla/5.0 (compatible; GenericAuditBot/1.0; +https://yourdomain.com)";
 
-    // Load HTML into cheerio for parsing
+const fetchPublicJsonAsset = async (url) => {
+  try {
+    const res = await axios.get(url, {
+      timeout: 3000,
+      headers: {
+        "User-Agent": DEFAULT_USER_AGENT,
+        "Accept": "application/json, text/plain, */*",
+      },
+    });
+
+    if (typeof res.data === "string") {
+      try {
+        return JSON.parse(res.data);
+      } catch {
+        return null;
+      }
+    }
+    return res.data;
+  } catch {
+    return null;
+  }
+};
+
+const scrapePublicSEOData = async (url) => {
+  try {
+    const { data } = await axios.get(url, {
+      timeout: 5000,
+      headers: { "User-Agent": DEFAULT_USER_AGENT },
+    });
+
     const $ = cheerio.load(data);
 
-    // Extract <title> and meta description
-    const title = $("title").text() || "";
-    const description = $('meta[name="description"]').attr("content") || "";
+    const title = $("title").text().trim() || "";
+    const description =
+      $('meta[name="description"]').attr("content")?.trim() || "";
 
-    // Extract up to 10 heading tags (h1, h2)
     const headings = $("h1, h2")
-      .map((i, el) => $(el).text())
+      .map((i, el) => $(el).text().replace(/\s+/g, " ").trim())
       .get()
+      .filter(Boolean)
       .slice(0, 10);
 
     return { title, description, headings };
-  } catch (error) {
-    console.error("Error in scrapeShopify:", error.message);
+  } catch {
     return { title: "", description: "", headings: [] };
   }
 };
 
-module.exports = { scrapeShopify };
+const fetchThemeConfig = async (storeUrl) => {
+  const paths = [
+    "/config/settings_schema.json",
+    "/assets/settings_data.json",
+  ];
+
+  const [schema, data] = await Promise.all(
+    paths.map((p) => fetchPublicJsonAsset(storeUrl + p))
+  );
+
+  return { themeSchema: schema, themeData: data };
+};
+
+const fetchShopifyData = async (storeUrl) => {
+  if (!storeUrl) return {};
+
+  const [seo, themeConfig] = await Promise.all([
+    scrapePublicSEOData(storeUrl),
+    fetchThemeConfig(storeUrl),
+  ]);
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    headings: seo.headings,
+    themeConfig,
+  };
+};
+
+module.exports = {
+  fetchShopifyData,
+  scrapePublicSEOData,
+  fetchThemeConfig,
+};
