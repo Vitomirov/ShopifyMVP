@@ -1,0 +1,228 @@
+{
+  "dom": {
+    "title": "Viktual+American ExpressGoogle PayMastercardShop PayUnion PayVisa",
+    "description": "Health and wellbeing, protein powder, super greens, supplements, dietary supplements, pre workout",
+    "headings": [
+      "Viktual+",
+      "Your New Zealand-Grown Gut Health Ritual",
+      "OUR DIFFERENCE",
+      "What Makes Viktual+ Different",
+      "Integrity at Heart, Whānau at Hand",
+      "Nature’s Power, Our Way",
+      "FROM OUR COMMUNITY",
+      "\"HAVE NOTICED A BIG DIFFERENCE, JUMPING OUT OF BED IN THE MORNINGS INSTEAD OF LYING IN BED LONGER DREADING THE DAY AHEAD, IT ALSO TASTES GREAT . . . WOULD HIGHLY RECOMMEND 👌🏽\"",
+      "\"THIS PRODUCT IS AMAZING I TRIED FOR THE FIRST OVER A MONTH AGO LIKE THE TASTE THE RESULTS. I FIND I HAVE MORE ENERGY BUT THE OTHER THING I EXPERIENCED WAS HOW FAST I HEALED WHEN GETTING MINOR SCRATCHES ETC. I RECOMMEND TO MY FRIENDS TO GIVE IT A GO.\"",
+      "\"SUCH A GREAT WAY TO GET IN MY DAILY BOOST OF GREENS! TASTES GREAT - I AM 100% A FUSSY EATER AND CAN HONESTLY SAY THIS IS DELICIOUS! I HAVE IT DAILY AND MY BODY FEELS SO MUCH BETTER!\"",
+      "\"I'VE BEEN USING KAVA NIGHT FOR OVER A YEAR NOW. I'VE HAD CHRONIC INSOMNIA FOR MORE THAN THREE DECADES AND HAVE TRIED MULTIPLE SLEEP AIDS, INCLUDING SLEEPING PILLS AT ONE POINT. KAVA NIGHT IS THE ONLY THING I'VE USED THAT WORKS AND CONTINUES TO WORK EVEN AFTER LONG TERM USE. NO NEXT MORNING HANGOVER, NO STOMACH ISSUES. HIGHLY RECOMMEND.\"",
+      "Blog posts"
+    ],
+    "meta": {
+      "canonical": "https://viktual.co.nz/",
+      "viewport": "width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0",
+      "robots": null,
+      "language": "en",
+      "ogTitle": "Viktual+",
+      "ogDescription": "Health and wellbeing, protein powder, super greens, supplements, dietary supplements, pre workout",
+      "ogImage": "http://viktual.co.nz/cdn/shop/files/og-image_630064a5-5bf3-44ba-9d06-8526a6ddce3c.png?v=1616718457&width=2048",
+      "twitterCard": "summary"
+    }
+  },
+  "pages": [
+    {
+      "url": "https://viktual.co.nz/",
+      "headings": [
+        "Viktual+",
+        "Your New Zealand-Grown Gut Health Ritual",
+        "OUR DIFFERENCE",
+        "What Makes Viktual+ Different",
+        "Integrity at Heart, Whānau at Hand",
+        "Nature’s Power, Our Way",
+        "FROM OUR COMMUNITY",
+        "\"HAVE NOTICED A BIG DIFFERENCE, JUMPING OUT OF BED IN THE MORNINGS INSTEAD OF LYING IN BED LONGER DREADING THE DAY AHEAD, IT ALSO TASTES GREAT . . . WOULD HIGHLY RECOMMEND 👌🏽\"",
+        "\"THIS PRODUCT IS AMAZING I TRIED FOR THE FIRST OVER A MONTH AGO LIKE THE TASTE THE RESULTS. I FIND I HAVE MORE ENERGY BUT THE OTHER THING I EXPERIENCED WAS HOW FAST I HEALED WHEN GETTING MINOR SCRATCHES ETC. I RECOMMEND TO MY FRIENDS TO GIVE IT A GO.\"",
+        "\"SUCH A GREAT WAY TO GET IN MY DAILY BOOST OF GREENS! TASTES GREAT - I AM 100% A FUSSY EATER AND CAN HONESTLY SAY THIS IS DELICIOUS! I HAVE IT DAILY AND MY BODY FEELS SO MUCH BETTER!\"",
+        "\"I'VE BEEN USING KAVA NIGHT FOR OVER A YEAR NOW. I'VE HAD CHRONIC INSOMNIA FOR MORE THAN THREE DECADES AND HAVE TRIED MULTIPLE SLEEP AIDS, INCLUDING SLEEPING PILLS AT ONE POINT. KAVA NIGHT IS THE ONLY THING I'VE USED THAT WORKS AND CONTINUES TO WORK EVEN AFTER LONG TERM USE. NO NEXT MORNING HANGOVER, NO STOMACH ISSUES. HIGHLY RECOMMEND.\"",
+        "Blog posts"
+      ],
+      "uniqueLinks": [
+        "https://viktual.co.nz/#main",
+        "https://viktual.co.nz/",
+        "https://viktual.co.nz/pages/about-us",
+        "https://viktual.co.nz/pages/what-we-mean-by-clean",
+        "https://viktual.co.nz/pages/collection-list",
+        "https://viktual.co.nz/pages/our-sustainability",
+        "https://viktual.co.nz/blogs/podcasts",
+        "https://viktual.co.nz/blogs/news",
+        "https://viktual.co.nz/pages/stockists",
+        "https://viktual.co.nz/account/login",
+        "https://viktual.co.nz/search",
+        "https://viktual.co.nz/cart",
+        "https://viktual.co.nz/collections/starter-pack",
+        "https://viktual.co.nz/products/manawa-flow-copy",
+        "https://viktual.co.nz/pages/shop",
+        "https://viktual.co.nz/pages/oxifend%C2%AE-sport-backed-by-science",
+        "https://viktual.co.nz/blogs/news/te-wiki-o-te-reo-maori-wellness-with-meaning",
+        "https://viktual.co.nz/blogs/news/balance-energy-why-greens-pre-workout-are-the-perfect-ritual-pairing",
+        "https://viktual.co.nz/blogs/news/tagged/clean-energy",
+        "https://viktual.co.nz/blogs/news/one-small-shift-move-first",
+        "https://viktual.co.nz/products/pre-workout",
+        "https://viktual.co.nz/products/kava-night-2",
+        "https://viktual.co.nz/policies/terms-of-service",
+        "https://www.facebook.com/tanaandrochelle.viktual",
+        "https://www.instagram.com/tanaandrochelle.viktual/",
+        "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+      ],
+      "totalLinksCount": 57,
+      "primaryNavLinks": [
+        "/",
+        "/pages/about-us",
+        "/pages/what-we-mean-by-clean",
+        "/pages/collection-list",
+        "/pages/our-sustainability",
+        "/blogs/podcasts",
+        "/blogs/news",
+        "/pages/stockists",
+        "/account/login",
+        "/search"
+      ],
+      "collectionLinks": [
+        "https://viktual.co.nz/collections/starter-pack"
+      ],
+      "formsCount": 4,
+      "inputFieldsCount": 2,
+      "conversion": {
+        "url": "https://viktual.co.nz/",
+        "ctaButtonsCount": 0,
+        "priceElementsCount": 0,
+        "trustSignalsCount": 0,
+        "newsletterFormsCount": 1,
+        "mainCTAText": []
+      }
+    },
+    {
+      "url": "https://viktual.co.nz//collections",
+      "headings": [],
+      "uniqueLinks": [
+        "https://viktual.co.nz/#main",
+        "https://viktual.co.nz/",
+        "https://viktual.co.nz/pages/about-us",
+        "https://viktual.co.nz/pages/what-we-mean-by-clean",
+        "https://viktual.co.nz/pages/collection-list",
+        "https://viktual.co.nz/pages/our-sustainability",
+        "https://viktual.co.nz/blogs/podcasts",
+        "https://viktual.co.nz/blogs/news",
+        "https://viktual.co.nz/pages/stockists",
+        "https://viktual.co.nz/account/login",
+        "https://viktual.co.nz/search",
+        "https://viktual.co.nz/cart",
+        "https://viktual.co.nz/collections/starter-pack",
+        "https://viktual.co.nz/collections",
+        "https://viktual.co.nz/collections/pea-protein",
+        "https://viktual.co.nz/collections/energy",
+        "https://viktual.co.nz/collections/kava-1",
+        "https://viktual.co.nz/collections/accessories",
+        "https://viktual.co.nz/pages/oxifend%C2%AE-sport-backed-by-science",
+        "https://viktual.co.nz/policies/terms-of-service",
+        "https://www.facebook.com/tanaandrochelle.viktual",
+        "https://www.instagram.com/tanaandrochelle.viktual/",
+        "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+      ],
+      "totalLinksCount": 39,
+      "primaryNavLinks": [
+        "/",
+        "/pages/about-us",
+        "/pages/what-we-mean-by-clean",
+        "/pages/collection-list",
+        "/pages/our-sustainability",
+        "/blogs/podcasts",
+        "/blogs/news",
+        "/pages/stockists",
+        "/account/login",
+        "/search"
+      ],
+      "collectionLinks": [
+        "https://viktual.co.nz/collections/starter-pack",
+        "https://viktual.co.nz/collections/pea-protein",
+        "https://viktual.co.nz/collections/energy",
+        "https://viktual.co.nz/collections/kava-1",
+        "https://viktual.co.nz/collections/accessories"
+      ],
+      "formsCount": 4,
+      "inputFieldsCount": 2,
+      "conversion": {
+        "url": "https://viktual.co.nz//collections",
+        "ctaButtonsCount": 0,
+        "priceElementsCount": 0,
+        "trustSignalsCount": 0,
+        "newsletterFormsCount": 1,
+        "mainCTAText": []
+      }
+    },
+    {
+      "url": "https://viktual.co.nz//products",
+      "headings": [],
+      "uniqueLinks": [
+        "https://viktual.co.nz/#main",
+        "https://viktual.co.nz/",
+        "https://viktual.co.nz/pages/about-us",
+        "https://viktual.co.nz/pages/what-we-mean-by-clean",
+        "https://viktual.co.nz/pages/collection-list",
+        "https://viktual.co.nz/pages/our-sustainability",
+        "https://viktual.co.nz/blogs/podcasts",
+        "https://viktual.co.nz/blogs/news",
+        "https://viktual.co.nz/pages/stockists",
+        "https://viktual.co.nz/account/login",
+        "https://viktual.co.nz/search",
+        "https://viktual.co.nz/cart",
+        "https://viktual.co.nz/collections/starter-pack",
+        "https://viktual.co.nz/collections",
+        "https://viktual.co.nz/collections/pea-protein",
+        "https://viktual.co.nz/collections/energy",
+        "https://viktual.co.nz/collections/kava-1",
+        "https://viktual.co.nz/collections/accessories",
+        "https://viktual.co.nz/pages/oxifend%C2%AE-sport-backed-by-science",
+        "https://viktual.co.nz/policies/terms-of-service",
+        "https://www.facebook.com/tanaandrochelle.viktual",
+        "https://www.instagram.com/tanaandrochelle.viktual/",
+        "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+      ],
+      "totalLinksCount": 39,
+      "primaryNavLinks": [
+        "/",
+        "/pages/about-us",
+        "/pages/what-we-mean-by-clean",
+        "/pages/collection-list",
+        "/pages/our-sustainability",
+        "/blogs/podcasts",
+        "/blogs/news",
+        "/pages/stockists",
+        "/account/login",
+        "/search"
+      ],
+      "collectionLinks": [
+        "https://viktual.co.nz/collections/starter-pack",
+        "https://viktual.co.nz/collections/pea-protein",
+        "https://viktual.co.nz/collections/energy",
+        "https://viktual.co.nz/collections/kava-1",
+        "https://viktual.co.nz/collections/accessories"
+      ],
+      "formsCount": 4,
+      "inputFieldsCount": 2,
+      "conversion": {
+        "url": "https://viktual.co.nz//products",
+        "ctaButtonsCount": 0,
+        "priceElementsCount": 0,
+        "trustSignalsCount": 0,
+        "newsletterFormsCount": 1,
+        "mainCTAText": []
+      }
+    }
+  ],
+  "lighthouse": {
+    "performanceScore": 0,
+    "accessibilityScore": 0,
+    "seoScore": 0,
+    "bestPracticesScore": 0,
+    "error": "Lighthouse timed out"
+  }
+}

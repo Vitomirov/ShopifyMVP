@@ -33,10 +33,6 @@ const isShopifyStore = async (url) => {
   }
 };
 
-// --- Safe accessor helpers ---
-const safeArray = (arr) => Array.isArray(arr) ? arr : [];
-const safeString = (str) => typeof str === "string" ? str : "";
-
 // --- Main analyze controller ---
 const analyzeController = async (req, res) => {
   try {
@@ -47,7 +43,7 @@ const analyzeController = async (req, res) => {
     const validShopify = await isShopifyStore(url);
     if (!validShopify) return res.status(400).json({ error: "Not a valid Shopify store." });
 
-    console.log(`✅ Shopify store confirmed: ${url}`);
+    console.log(`Shopify store confirmed: ${url}`);
 
     // --- Fetch scraped data safely ---
     const scraped = await fetchShopifyData(url);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import URLForm from "./components/URLForm";
 import Recommendations from "./components/Recommendations";
 import "./styles/App.css";

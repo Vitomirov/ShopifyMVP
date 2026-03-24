@@ -3,6 +3,7 @@
   margin: 50px auto;
   font-family: Arial, sans-serif;
   text-align: center;
+  margin-left: 41rem;
 }
 
 .url-form {
@@ -43,3 +44,7 @@
     borderRadius: "8px", 
     marginTop: "20px",
 }
+
+   .help {
+    border: 2px solid red;
+   }

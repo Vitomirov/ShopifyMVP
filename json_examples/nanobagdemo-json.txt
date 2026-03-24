@@ -1,0 +1,93 @@
+{
+  "dom": {
+    "title": "demo",
+    "description": "",
+    "headings": [
+      "demo"
+    ],
+    "meta": {
+      "canonical": null,
+      "viewport": "width=device-width, initial-scale=1",
+      "robots": null,
+      "language": "en",
+      "ogTitle": null,
+      "ogDescription": null,
+      "ogImage": null,
+      "twitterCard": null
+    }
+  },
+  "pages": [
+    {
+      "url": "https://nanobagdemo.myshopify.com/",
+      "headings": [
+        "demo"
+      ],
+      "uniqueLinks": [
+        "https://nanobagdemo.myshopify.com/admin"
+      ],
+      "totalLinksCount": 1,
+      "primaryNavLinks": [],
+      "collectionLinks": [],
+      "formsCount": 1,
+      "inputFieldsCount": 1,
+      "conversion": {
+        "url": "https://nanobagdemo.myshopify.com/",
+        "ctaButtonsCount": 0,
+        "priceElementsCount": 0,
+        "trustSignalsCount": 0,
+        "newsletterFormsCount": 0,
+        "mainCTAText": []
+      }
+    },
+    {
+      "url": "https://nanobagdemo.myshopify.com//collections",
+      "headings": [
+        "demo"
+      ],
+      "uniqueLinks": [
+        "https://nanobagdemo.myshopify.com/admin"
+      ],
+      "totalLinksCount": 1,
+      "primaryNavLinks": [],
+      "collectionLinks": [],
+      "formsCount": 1,
+      "inputFieldsCount": 1,
+      "conversion": {
+        "url": "https://nanobagdemo.myshopify.com//collections",
+        "ctaButtonsCount": 0,
+        "priceElementsCount": 0,
+        "trustSignalsCount": 0,
+        "newsletterFormsCount": 0,
+        "mainCTAText": []
+      }
+    },
+    {
+      "url": "https://nanobagdemo.myshopify.com//products",
+      "headings": [
+        "demo"
+      ],
+      "uniqueLinks": [
+        "https://nanobagdemo.myshopify.com/admin"
+      ],
+      "totalLinksCount": 1,
+      "primaryNavLinks": [],
+      "collectionLinks": [],
+      "formsCount": 1,
+      "inputFieldsCount": 1,
+      "conversion": {
+        "url": "https://nanobagdemo.myshopify.com//products",
+        "ctaButtonsCount": 0,
+        "priceElementsCount": 0,
+        "trustSignalsCount": 0,
+        "newsletterFormsCount": 0,
+        "mainCTAText": []
+      }
+    }
+  ],
+  "lighthouse": {
+    "performanceScore": 98,
+    "accessibilityScore": 90,
+    "seoScore": 91,
+    "bestPracticesScore": 96
+  }
+}
