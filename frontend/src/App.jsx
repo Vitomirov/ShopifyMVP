@@ -1,14 +1,19 @@
 import { useState } from "react";
 import URLForm from "./components/URLForm";
 import Recommendations from "./components/Recommendations";
-import "./styles/App.css";
+import Header from "./components/Header";
+//import "./styles/App.css";
+
+
 
 function App() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  return (
+  return (    
     <div className="app-container">
+      <Header />
+      <h1 className="text-4xl text-red-500">Tailwind works</h1>
       <h1>Shopify AI Conversion Optimizer</h1>
 
       <URLForm setRecommendations={setResult} setLoading={setLoading} />
