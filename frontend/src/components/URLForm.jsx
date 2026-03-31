@@ -15,7 +15,7 @@ const URLForm = ({ setRecommendations, setLoading }) => {
 
     try {
       // POST request ka backendu
-      const response = await axios.post("http://localhost:3000/api/analyze", { url });
+      const response = await axios.post("http://localhost:3001/api/analyze", { url });
 
       // backend vraća: { data: {...}, shopify: {...}, audit: {...} }
       setRecommendations(response.data); // cela struktura ide u state

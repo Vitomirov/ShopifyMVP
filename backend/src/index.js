@@ -17,5 +17,5 @@ app.use("/api/analyze", analyzeRoute);
 app.get("/ping", (req, res) => res.send("Backend is working!"));
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server is on port ${PORT}`));

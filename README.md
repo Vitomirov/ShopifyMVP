@@ -121,9 +121,9 @@ From the root directory:
 docker compose up --build
 ```
 ### 4. Access Services
-Frontend: http://localhost:5173
+Frontend: http://localhost:5174
 
-Backend: http://localhost:3000
+Backend: http://localhost:3001
 
 ### 5. Development Notes
 - Backend runs with nodemon for live reload
